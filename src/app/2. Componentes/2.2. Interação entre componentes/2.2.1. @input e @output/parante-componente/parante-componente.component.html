@@ -1,0 +1,8 @@
+<div>
+  <h2>Componente Pai</h2>
+  <app-child-compoent
+    [messageFromParent]="'Olá, Filho!'"
+    (messageToParent)="receiveMessage($event)">
+  </app-child-compoent>
+  <p>Mensagem do Filho: {{ messageFromChild }}</p>
+</div>
