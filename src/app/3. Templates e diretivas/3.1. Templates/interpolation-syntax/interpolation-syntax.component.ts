@@ -9,5 +9,5 @@ import { Component } from '@angular/core';
 })
 export class InterpolationSyntaxComponent {
   technology : string  = 'Angular';
-  areaTechnology : string = 'Framwork front-end';
+  areaTechnology : string = 'Framework front-end';
 }
