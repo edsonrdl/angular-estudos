@@ -1,0 +1,6 @@
+<p>diretiva-ng-switch works!</p>
+<div [ngSwitch]="pagamento">
+  <p *ngSwitchCase="'boleto'">Pagamento em boleto</p>
+  <p *ngSwitchCase="'cartao'">Pagamento em cartão</p>
+  <p *ngSwitchCase="'paypal'">Pagamento em paypal</p>
+  <p *ngSwitchDefault>Forma de pagamento não identificada</p>
