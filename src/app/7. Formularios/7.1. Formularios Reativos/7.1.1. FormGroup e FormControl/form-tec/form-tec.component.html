@@ -1,5 +1,4 @@
 <form [formGroup]="FormTec" (ngSubmit)="onSubmit()">
-  <!-- Nome do Desenvolvedor -->
   <label for="nome">Nome do Desenvolvedor:</label>
   <input id="nome" type="text" formControlName="nome">
   <div *ngIf="FormTec.controls.nome.invalid && FormTec.controls.nome.touched">
@@ -8,7 +7,6 @@
     <small *ngIf="FormTec.controls.nome.errors?.['maxlength']">O nome deve ter no máximo 10 caracteres.</small>
   </div>
 
-  <!-- Tecnologia Favorita -->
   <label for="tecFavorita">Tecnologia Favorita:</label>
   <input id="tecFavorita" type="text" formControlName="tecFavorita">
   <div *ngIf="FormTec.controls.tecFavorita.invalid && FormTec.controls.tecFavorita.touched">
@@ -17,6 +15,5 @@
     <small *ngIf="FormTec.controls.tecFavorita.errors?.['maxlength']">Deve ter no máximo 10 caracteres.</small>
   </div>
 
-  <!-- Botão de Envio -->
   <button type="submit" [disabled]="FormTec.invalid">Entrar</button>
 </form>

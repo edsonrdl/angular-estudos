@@ -18,6 +18,7 @@ export class FormTecComponent {
   onSubmit() {
     if (this.FormTec.valid) {
       console.log('Formulário enviado com sucesso:', this.FormTec.value);
+      alert(this.FormTec.value.nome + ' sua tecnologia favorita é ' + this.FormTec.value.tecFavorita);
     } else {
       console.log('Formulário inválido!');
     }
