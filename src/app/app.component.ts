@@ -14,7 +14,7 @@ import { RouterModule } from '@angular/router';
   templateUrl: './app.component.html',
   standalone: true,
   styleUrl: './app.component.scss',
-  imports: [RouterModule, PropertyBindingComponent,DiretivaNgSwitchComponent, DiretiNgStyleComponent, DiretiNgClassComponent, FormTecComponent, ParentComponent],
+  imports: [RouterModule],
 })
 export class AppComponent {
   title = 'angular-estudos';
